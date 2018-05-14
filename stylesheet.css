@@ -6,37 +6,40 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #33223b;
 }
 
 #display {
     display: grid;
     grid-gap: 1em 1em;
-    grid-auto-flow: row;
-
+/*    grid-auto-flow: column;*/
+    grid-template-columns: repeat( auto-fit, 1fr);
+    grid-template-rows: repeat( auto-fit, 1fr);
     align-content: space-evenly;
     justify-content: space-evenly;
 }
 
 div.codigo {
-    padding: 1em;
-    background-color: grey;
 
-    border-radius: 5px;
+    padding: 1em 3em 3em 3em;
+    background-color: #211e2b;
+    box-shadow: 2px 2px 3px rgba(27, 24, 31, 0.5);
+
+    border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #ed8f5b;
     font-size: 0.8em;
 }
 
 div.video {
-    padding: 1em;
-    background-color: black;
+
 }
 
 h1, h5{
     text-align: center;
     padding: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color: #f65460;
 }
 
 h5 {
